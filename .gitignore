@@ -205,3 +205,24 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Ignore large raw data files
+data/raw/transaction_data.csv
+data/raw/causal_data.csv
+
+# Ignore all large CSVs globally
+*.csv
+
+# But KEEP the small CSVs in raw that you already uploaded
+!data/raw/campaign_desc.csv
+!data/raw/campaign_table.csv
+!data/raw/coupon.csv
+!data/raw/coupon_redempt.csv
+!data/raw/product.csv
+!data/raw/household.csv
+
+# Ignore processed data
+data/processed/*
+*.parquet
+
